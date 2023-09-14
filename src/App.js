@@ -16,8 +16,8 @@ function App() {
   return (
     <div className="container">
       <div className={`dropdown`}>
-        <button onClick={handleDropdownClick} className="dropdown-btn">
-          {dropdownValue === "" ? "Dropdown" : dropdownValue}
+        <button onMouseUp={handleDropdownClick} className="dropdown-btn">
+          {dropdownValue === "" ? "Enter your option" : dropdownValue}
         </button>
         <div
           className={`dropdown-items ${
@@ -27,33 +27,33 @@ function App() {
           <div className="dropdown-item">
             <div
               className="dropdown__link"
-              onClick={() => handleSetDropdownValue("Yes.....!")}
+              onClick={() => handleSetDropdownValue("FIRST...!")}
             >
-            Yes.....!
+            OPTION FIRST
             </div>
           </div>
           <div className="dropdown-item">
             <div
               className="dropdown__link"
-              onClick={() => handleSetDropdownValue("NO.....!")}
+              onClick={() => handleSetDropdownValue("SECOND...!")}
             >
-            NO.....!
+            OPTION SECOND
             </div>
           </div>
           <div className="dropdown-item">
             <div
               className="dropdown__link"
-              onClick={() => handleSetDropdownValue("Can't Say.....!")}
+              onClick={() => handleSetDropdownValue("THIRD...!")}
             >
-            Probably not
+            OPTION THIRD
             </div>
           </div>
           <div className="dropdown-item">
             <div
               className="dropdown__link"
-              onClick={() => handleSetDropdownValue("By Pradeep....!")}
+              onClick={() => handleSetDropdownValue("FOURTH...!")}
             >
-            By Pradeep....!
+           OPTION FOURTH
             </div>
           </div>
         </div>
